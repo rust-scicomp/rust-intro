@@ -564,9 +564,9 @@ This is an important part of how the compiler enforces memory safety.
 
 ---
 
-# Feedback and conclusions 2
+# Feedback and conclusions 2: want to do more Rust?
 
-- Join The #rusty channel on Slack
+- Join the #rusty channel on Slack
 - Any suggestions for follow on events if you want to do more Rust?
 
 ---
