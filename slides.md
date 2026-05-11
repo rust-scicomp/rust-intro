@@ -142,7 +142,7 @@ When making a library, the keyword `pub` can be used before `fn` to define publi
 # Activity
 
 Write a function that takes the number of sides as an input and returns the size
-of an an angle in a regular polygon with that number of sides.
+of an angle in a regular polygon with that number of sides.
 
 <br />
 
@@ -539,7 +539,7 @@ This is an important part of how the compiler enforces memory safety.
 - Rust book
     - free at [doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
     - non-free paper versions also available
-- Scientific Computing in Rust 2026, DAY to DAY, virtual free event
+- Scientific Computing in Rust 2026, 8- 10 July, virtual free event
     - [scientificcomputing.rs/2026](https://scientificcomputing.rs/2026)
     - Talks from previous years on [YouTube](https://www.youtube.com/@ScientificComputinginRust)
 - Ask me!
