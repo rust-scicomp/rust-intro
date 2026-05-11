@@ -122,7 +122,7 @@ if sides == 1 {
 You can do either:
 
 ```rust
-fn one_more(n: int) -> int {
+fn one_more(n: i32) -> i32 {
     return n + 1;
 }
 ```
@@ -130,7 +130,7 @@ fn one_more(n: int) -> int {
 Or:
 
 ```rust
-fn one_more(n: int) -> int {
+fn one_more(n: i32) -> i32 {
     n + 1
 }
 ```
@@ -238,7 +238,7 @@ You may want to:
 - Functions can return a `Vec`:
     ```rust
     fn f(number_of_zeros: usize) -> Vec<f64> {
-        vec![0.0; number_of_zeros];
+        vec![0.0; number_of_zeros]
     }
     ```
 ---
@@ -300,7 +300,7 @@ A struct can be used to store data of a mixture of types.
 /// A regular polygon
 struct RegularPolygon {
     /// Number of sides
-    n_sides: int,
+    n_sides: i32,
 }
 
 
@@ -316,7 +316,7 @@ Functions can be implemented for a struct. The function `new` is often defined t
 ```rust
 impl RegularPolygon {
     /// Create a new
-    pub fn new(number_of_sides: int) -> Self {
+    pub fn new(number_of_sides: i32) -> Self {
         Self { n_sides: number_of_sides }
     }
 }
@@ -334,7 +334,7 @@ When initialising a struct `variable: variable` can be simplified to just `varia
 ```rust
 impl RegularPolygon {
     /// Create a new
-    pub fn new(n_sides: int) -> Self {
+    pub fn new(n_sides: i32) -> Self {
         Self { n_sides }
     }
 }
@@ -434,7 +434,7 @@ let n_points = if degree < 2 {
 ```
 
 ```rust
-fn collatz(n: int) -> int {
+fn collatz(n: i32) -> i32 {
     if n % 2 == 0 {
         n / 2
     } else {
