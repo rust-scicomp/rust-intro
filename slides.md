@@ -261,7 +261,7 @@ You may want to:
 
 # Activity
 
-Write a function that takes the number of sides as an input and the coordinates
+Write a function that takes the number of sides as an input and output the coordinates
 of the vertices of a regular polygon with that number of sides.
 
 ---
