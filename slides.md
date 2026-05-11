@@ -556,12 +556,18 @@ This is an important part of how the compiler enforces memory safety.
 
 - One post it notes, write:
     - One thing that you learned today
-    - How this session has affected your desire to learn Rust
     - Any suggestions for next time I run something like this, eg:
         - anything that was unclear
         - anything that we didn't cover that you'd like to have seen
         - anything that we spent too long on
     - Any suggestions for follow on events if you want to do more Rust
+
+---
+
+# Feedback and conclusions 2
+
+- Join The #rusty channel on Slack
+- Any suggestions for follow on events if you want to do more Rust?
 
 ---
 
