@@ -560,7 +560,6 @@ This is an important part of how the compiler enforces memory safety.
         - anything that was unclear
         - anything that we didn't cover that you'd like to have seen
         - anything that we spent too long on
-    - Any suggestions for follow on events if you want to do more Rust
 
 ---
 
