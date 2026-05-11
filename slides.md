@@ -534,7 +534,7 @@ This is an important part of how the compiler enforces memory safety.
 
 ---
 
-# (Reasonably) simple Python wrapping
+# Reasons to like Rust #10: (Reasonably) simple Python wrapping
 
 - Using [PyO3](https://pyo3.rs/) or [Maturin](https://github.com/pyo3/maturin).
 
