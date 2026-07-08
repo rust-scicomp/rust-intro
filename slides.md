@@ -27,16 +27,19 @@ footer: Slide template setup borrowed from [Sam Cunliffe](https://github.com/sam
 
 <!--
 paginate: true
-footer: An introduction to Rust (mscroggs.github.io/rust-intro)
+footer: An introduction to Rust (rust-scicomp.github.io/rust-intro)
 -->
 
 # Plan for today
 
 0. Hello world
 1. Basic Rust syntax
-2. Testing in Rust
-3. Traits and structs
-4. Reasons to like Rust
+   - variables
+   - if, else
+   - functions
+   - loops
+   - vectors
+3. Reasons to like Rust
 
 ---
 
@@ -223,7 +226,11 @@ of the vertices of a regular polygon with that number of sides.
 
 ---
 
-# `trait`s
+# Reasons to like Rust
+
+---
+
+# Reasons to like Rust #1: `trait`s
 
 A trait is use to define an abstract interface that could be implemented. For example:
 
@@ -241,105 +248,11 @@ trait Polygon {
 }
 ```
 
----
-
-# `struct`s
-
-A struct can be used to store data of a mixture of types.
-
-```rust
-/// A regular polygon
-struct RegularPolygon {
-    /// Number of sides
-    n_sides: i32,
-}
-
-
-let triangle = RegularPolygon { n_sides: 3 };
-```
+These traits can them be `impl`emented for a `struct`
 
 ---
 
-# `struct`s
-
-Functions can be implemented for a struct. The function `new` is often defined to make a nicer user interface:
-
-```rust
-impl RegularPolygon {
-    /// Create a new
-    pub fn new(number_of_sides: i32) -> Self {
-        Self { n_sides: number_of_sides }
-    }
-}
-
-
-let triangle = RegularPolygon::new(3);
-```
-
----
-
-# `struct`s
-
-When initialising a struct `variable: variable` can be simplified to just `variable`, eg:
-
-```rust
-impl RegularPolygon {
-    /// Create a new
-    pub fn new(n_sides: i32) -> Self {
-        Self { n_sides }
-    }
-}
-```
-
----
-
-# `struct`s
-
-Traits can be implemented for a struct:
-
-```rust
-impl Polygon for RegularPolygon {
-    fn vertex_count(&self) -> usize {
-        self.n_sides
-    }
-    fn area(&self) -> f64 {
-        todo!();
-    }
-    fn perimeter(&self) -> f64 {
-        todo!();
-    }
-}
-```
-
----
-
-# Activity
-
-Finish implementing the `Polygon` trait for `RegularPolygon`:
-
-```rust
-impl Polygon for RegularPolygon {
-    fn vertex_count(&self) -> usize {
-        self.n_sides
-    }
-    fn area(&self) -> f64 {
-        todo!();
-    }
-    fn perimeter(&self) -> f64 {
-        todo!();
-    }
-}
-```
-
-... then test it!
-
----
-
-# Reasons to like Rust
-
----
-
-# Reasons to like Rust #1: `&impl Trait`
+# Reasons to like Rust #2: `&impl Trait`
 
 Functions can use "any item that implements this trait" as an input type:
 
@@ -356,7 +269,7 @@ This means your function can be used for objects in someone else's library as lo
 
 ---
 
-# Reasons to like Rust #2: package management
+# Reasons to like Rust #3: package management
 
 Adding dependencies is easy (Cargo.toml):
 ```toml
@@ -374,28 +287,6 @@ serde = { version = "1", features = ["derive"], optional = true }
 
 ---
 
-# Reasons to like Rust #3: Any code block can return a value
-
-```rust
-let n_points = if degree < 2 {
-    0
-} else {
-    degree - 2
-};
-```
-
-```rust
-fn collatz(n: i32) -> i32 {
-    if n % 2 == 0 {
-        n / 2
-    } else {
-        3 * n + 1
-    }
-}
-```
-
----
-
 # Reasons to like Rust #4: enums can hold values
 
 ```rust
@@ -409,20 +300,7 @@ pub enum Transformation {
 
 ---
 
-# Reasons to like Rust #5: `if let`
-
-```rust
-let t = Transformation::Identity;
-
-if let Permutation(p) = t {
-    todo!();
-}
-```
-
-
----
-
-# Reasons to like Rust #6: `break 'a`
+# Reasons to like Rust #5: `break 'a`
 
 `'` can used to label a loop then tell break which loop to break.
 ```rust
@@ -438,7 +316,7 @@ if let Permutation(p) = t {
 
 ---
 
-# Reasons to like Rust #7: Borrowing
+# Reasons to like Rust #6: Borrowing
 
 Every item in Rust has an owner. If an item is passed into a function, the function takes ownership
 
@@ -452,7 +330,7 @@ println!("{:?}", a);
 
 ---
 
-# Reasons to like Rust #7: Borrowing
+# Reasons to like Rust #6: Borrowing
 
 `&` can be used to "borrow" items to let a function use them without taking ownership:
 
@@ -468,7 +346,7 @@ println!("{:?}", a);
 
 ---
 
-# Reasons to like Rust #8: Memory safety
+# Reasons to like Rust #7: Memory safety
 
 The compiler checks that at any time, any item has either:
 
@@ -479,13 +357,13 @@ This is an important part of how the compiler enforces memory safety.
 
 ---
 
-# Reasons to like Rust #9: `cargo fmt` and `cargo clippy`
+# Reasons to like Rust #8: `cargo fmt` and `cargo clippy`
 
 - Code formatting and linting out of the box
 
 ---
 
-# Reasons to like Rust #10: (Reasonably) simple Python wrapping
+# Reasons to like Rust #9: (Reasonably) simple Python wrapping
 
 - Using [PyO3](https://pyo3.rs/) or [Maturin](https://github.com/pyo3/maturin).
 
@@ -496,28 +374,9 @@ This is an important part of how the compiler enforces memory safety.
 - Rust book
     - free at [doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
     - non-free paper versions also available
-- Scientific Computing in Rust 2026, 8- 10 July, virtual free event
-    - [scientificcomputing.rs/2026](https://scientificcomputing.rs/2026)
-    - Talks from previous years on [YouTube](https://www.youtube.com/@ScientificComputinginRust)
-- Ask me!
+- Ask un on Zulip!
 
 ---
-
-# Feedback and conclusions
-
-- One post it notes, write:
-    - One thing that you learned today
-    - Any suggestions for next time I run something like this, eg:
-        - anything that was unclear
-        - anything that we didn't cover that you'd like to have seen
-        - anything that we spent too long on
-
----
-
-# Feedback and conclusions 2: want to do more Rust?
-
-- Join the #rusty channel on Slack
-- Any suggestions for follow on events if you want to do more Rust?
 
 ---
 
@@ -527,7 +386,7 @@ This is an important part of how the compiler enforces memory safety.
 
 # Thanks for coming!
 
-[mscroggs.github.io/rust-intro](https://mscroggs.github.io/rust-intro/)
+[rust-scicomp.github.io/rust-intro](https://rust-scicomp.github.io/rust-intro/)
 
 ![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
 
