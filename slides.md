@@ -142,41 +142,6 @@ Hint: `f64` and `f32` are the Rust types for 64 and 32 bit floats
 
 ---
 
-# Testing in Rust
-
-```rust
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
-```
-then run `cargo test`
-
-- `#[cfg(test)]` means the `mod` will only be compiled if running `cargo test`
-- Any function marked with `#[test]` will be run by `cargo test`
-
----
-
-# Activity
-
-Add a test that checks the output of your angle function.
-
-<br />
-
-You may want to:
-
-- Add `approx = "0.5"` as a dependency
-- Add `use approx::*;` at the start of your tests
-- Use `assert_relative_eq!(a, b);` to assert that two values are close
-    - `assert_relative_eq!(a, b, epsilon=1e-8);` to adjust tolerance
-
----
-
 # Basic syntax #4: loops
 
 - `while` loop:
@@ -255,12 +220,6 @@ You may want to:
 
 Write a function that takes the number of sides as an input and output the coordinates
 of the vertices of a regular polygon with that number of sides.
-
----
-
-# Probably a good time for a break
-
-... I hope I remembered to make cake
 
 ---
 
