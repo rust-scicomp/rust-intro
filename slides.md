@@ -14,7 +14,7 @@ Stick the note on the whiteboard.
 
 ![bg right fit](assets/qr.svg)
 
-# [mscroggs.github.io/rust-intro](https://mscroggs.github.io/rust-intro/)
+# [rust-scicomp.github.io/rust-intro/](https://rust-scicomp.github.io/rust-intro/)
 
 ---
 
