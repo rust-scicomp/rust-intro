@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-title: An introduction to Rust - Matthew Scroggs
+title: An introduction to Rust - Matthew Scroggs & Ignacia Fierro Piccardo
 ---
 
 # As you arrive
