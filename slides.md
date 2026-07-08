@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-title: An introduction to Rust - Matthew Scroggs & Ignacia Fierro Piccardo
+title: An introduction to Rust - Ignacia Fierro Piccardo & Matthew Scroggs
 ---
 
 ![bg right fit](assets/qr.svg)
@@ -18,7 +18,7 @@ footer: Slide template setup borrowed from [Sam Cunliffe](https://github.com/sam
 
 # An introduction to Rust
 
-[Matthew Scroggs](https://mscroggs.co.uk) & [Ignacia Fierro Piccardo](https://github.com/ignacia-fp)
+[Ignacia Fierro Piccardo](https://github.com/ignacia-fp) & [Matthew Scroggs](https://mscroggs.co.uk)
 
 ![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
 
