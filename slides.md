@@ -4,14 +4,6 @@ theme: default
 title: An introduction to Rust - Matthew Scroggs & Ignacia Fierro Piccardo
 ---
 
-# As you arrive
-
-On a post it note write a reason why you're interested in learning Rust.
-
-Stick the note on the whiteboard.
-
----
-
 ![bg right fit](assets/qr.svg)
 
 # [rust-scicomp.github.io/rust-intro/](https://rust-scicomp.github.io/rust-intro/)
@@ -19,14 +11,14 @@ Stick the note on the whiteboard.
 ---
 
 <!--
-footer: Based on material developed with [Ignacia Fierro Piccardo](https://github.com/ignacia-fp). Slide template setup borrowed from [Sam Cunliffe](https://github.com/samcunliffe).
+footer: Slide template setup borrowed from [Sam Cunliffe](https://github.com/samcunliffe).
 -->
 
 ![width:10em](assets/science-ferris-transparent.png)
 
 # An introduction to Rust
 
-[Matthew Scroggs](https://mscroggs.co.uk)
+[Matthew Scroggs](https://mscroggs.co.uk) & [Ignacia Fierro Piccardo](https://github.com/ignacia-fp)
 
 ![h:31](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
 
