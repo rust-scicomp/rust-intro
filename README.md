@@ -8,8 +8,8 @@ Please [install Rust](https://rust-lang.org/tools/install/) before the session.
 
 # Reuse
 
-These slides were writen by [@mscroggs] using ideas developed by [@mscroggs] and [@ignacia-fp]
-for their introduction at [Scientific Computing in Rust]. The slide formatting borrow's heavily from
+These slides were writen by [@mscroggs] and [@ignacia-fp]
+for their introduction at [Scientific Computing in Rust]. The slide formatting borrows heavily from
 [supergit] by [@samcunliffe].
 
 If any of this is useful to you for teaching or learning or anything else, please feel encouraged to use it!
