@@ -143,6 +143,10 @@ of an angle in a regular polygon with that number of sides.
 
 Hint: `f64` and `f32` are the Rust types for 64 and 32 bit floats
 
+<br />
+
+Reminder: If a regular polygon has $n$ sides, one of its internal angles (in degrees) is $180(n - 2)/n$.
+
 ---
 
 # Basic syntax #4: loops
