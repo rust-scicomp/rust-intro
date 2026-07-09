@@ -145,7 +145,7 @@ Hint: `f64` and `f32` are the Rust types for 64 and 32 bit floats
 
 <br />
 
-Reminder: If a regular polygon has $n$ sides, one of its internal angles (in degrees) is $180(n - 2)/n$.
+Reminder: If a regular polygon has *n* sides, one of its internal angles (in degrees) is 180&times;(*n* - 2)/*n*.
 
 ---
 
@@ -227,6 +227,10 @@ Reminder: If a regular polygon has $n$ sides, one of its internal angles (in deg
 
 Write a function that takes the number of sides as an input and output the coordinates
 of the vertices of a regular polygon with that number of sides.
+
+<br />
+
+Hint: The coordinates of these vertices could be (cos(*a*),sin(*a*)) with *a* being equally spaced angles between 0 and 360 degrees (or 0 and 2&pi; radians).
 
 ---
 
